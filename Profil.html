@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    p{
+        color: blue;
+        font-size: 20px;
+        background-color: rgb(17, 219, 10);
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+label {display: block;}
+ 
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+</style>
+<h2>Input Fields with Padding</h2>
+
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname">
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname">
+</form>
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quod est aut odit, repellendus itaque sapiente fugit blanditiis neque illo nobis. Soluta quidem sapiente quod laudantium voluptatibus earum inventore quas?</p>
+    <p>ini adalah bagian dari paragraf</p>
+</body>
+</html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.responsive-form {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid #04AA6D;;
+  background-color:  #f2f2f2;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+label {
+  min-width: 48%;
+  margin-bottom: 10px;
+}
+
+input[type=text], select {
+  min-width: 45%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+textarea {
+  min-width: 45%;
+  height: 150px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #ff009d;
+  color: rgb(255, 255, 255);
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  label,
+  input[type=text],
+  input[type=submit],
+  select, textarea {
+    flex: 100%;
+    min-width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+<h2>Responsive Form</h2>
+<p>Resize the screen to see the form layout change!</p>
+
+<div class="responsive-form">
+
+ <form action="/action_page.php">
+   <label for="fname">First Name:</label>
+   <input type="text" id="fname" name="fname" placeholder="Your first name">
+
+   <label for="lname">Last Name:</label>
+   <input type="text" id="lname" name="lname" placeholder="Your last name">
+
+   <label for="country">Country:</label>
+   <select id="country" name="country">
+     <option value="australia">Australia</option>
+     <option value="canada">Canada</option>
+     <option value="usa">USA</option>
+     <option value="brazil">Brazil</option>
+    </select>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Write something.."></textarea>
+
+    <input type="submit" value="Submit">
+ </form>
+
+</div>
+
+</body>
+</html>
+
+
